@@ -1,0 +1,60 @@
+.myOrderContainer {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+}
+
+.homeContent {
+  display: flex;
+  justify-content: center;
+}
+
+.orderNav {
+  background-color: #eae2b7;
+  color: #d62828;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.currentOrder {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.currentOrder::-webkit-scrollbar {
+  display: none;
+}
+
+.currentOrderNav {
+  display: flex;
+  background-color: olive;
+  color: #dfc324;
+  border-radius: 16px;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  margin: 7px 0px;
+}
+
+.pastOrder {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.pastOrder::-webkit-scrollbar {
+  display: none;
+}
+.pastOrderNav {
+  display: flex;
+  background-color: olive;
+  color: #dfc324;
+  border-radius: 16px;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  margin: 7px 0px;
+}

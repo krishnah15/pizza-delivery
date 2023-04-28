@@ -1,0 +1,25 @@
+.cOrder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d62828;
+  border-radius: 16px;
+  opacity: 0.7;
+  color: #03071e;
+  font-weight: 600;
+  margin-bottom: 7px;
+  padding: 5px;
+}
+
+.totalCost {
+  display: flex;
+  justify-content: right;
+  margin: 3px;
+}
+
+.COrderId {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}

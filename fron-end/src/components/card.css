@@ -1,0 +1,75 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cardContainer {
+  width: 280px;
+  height: 190px;
+  opacity: 0.8;
+  border-radius: 10%;
+  display: flex;
+  background-color: #eae2b7;
+  overflow: hidden;
+}
+
+.cardDeets {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7px;
+}
+
+.imgDiv {
+  flex: 2;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pizzaDes {
+  font-size: 12px;
+}
+/* .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d62828;
+  margin: 8px;
+} */
+
+.price {
+  color: #d62828;
+}
+.addCart {
+  display: inline;
+  color: white;
+  background-color: #d62828;
+  margin: 2px;
+  width: fit-content;
+  padding: 3px;
+  font-weight: 200;
+  border-radius: 16px;
+  justify-content: center;
+}
+
+.addCart:hover {
+  background-color: #6a040f;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+h4 {
+  color: #d62828;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s ease;
+}

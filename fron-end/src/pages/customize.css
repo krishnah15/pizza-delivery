@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  width: 90%;
+  height: 90%;
+}
+
+.custImg {
+  display: flex;
+  flex: 1;
+}
+
+.custInfo {
+  display: flex;
+  flex: 3;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.items {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.custInfoBase {
+  display: flex;
+  background-color: #d62828;
+  opacity: 0.8;
+  border-radius: 16px;
+  width: 45%;
+  height: 45%;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+}
+
+.custProductImg {
+  height: 90%;
+  margin-top: 25px;
+}
+
+.meriHeading {
+  font-family: "Shrikhand";
+  color: #9d0208;
+}

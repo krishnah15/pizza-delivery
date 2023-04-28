@@ -1,0 +1,7 @@
+.detailedItems {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  font-size: large;
+  font-weight: 600;
+}
