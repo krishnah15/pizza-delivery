@@ -82,6 +82,7 @@ input:focus::placeholder {
 
 .btn:hover {
   background-color: #f77f00;
+  cursor: pointer;
 }
 a {
   color: #d00000;

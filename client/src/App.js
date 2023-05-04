@@ -9,23 +9,31 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function App() {
-  const user = 0;
+  const user = useSelector((state) => state.user.user.currentUser);
+
   return (
     <Router>
       <Routes>
         <Route
           path="/login"
-          element={user ? <Navigate to="/Login" replace /> : <Login />}
+          element={user ? <Navigate to="/" replace /> : <Login />}
         />
         <Route path="/register" element={<Register />} />
         <Route
           path="/"
-          element={user ? <Home /> : <Navigate to="/Login" replace />}
+          element={user ? <Home /> : <Navigate to="/login" replace />}
         />
-        <Route path="/customize" element={<Customize />} />
-        <Route path="/order" element={<OrderItem />} />
+        <Route
+          path="/customize/:id"
+          element={user ? <Customize /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/order"
+          element={user ? <OrderItem /> : <Navigate to="/login" replace />}
+        />
       </Routes>
     </Router>
   );

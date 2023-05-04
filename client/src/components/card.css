@@ -50,10 +50,10 @@
   color: white;
   background-color: #d62828;
   margin: 2px;
-  width: fit-content;
-  padding: 3px;
-  font-weight: 200;
-  border-radius: 16px;
+  width: 90%;
+  padding: 10px;
+  font-weight: 300;
+  border-radius: 20px;
   justify-content: center;
 }
 

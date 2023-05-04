@@ -16,16 +16,19 @@
   overflow: hidden;
 }
 
-.crossBtn {
+.deleteBtn {
   background-color: #d62828;
-  width: 15px;
+  width: 35px;
   justify-content: center;
   color: antiquewhite;
-  border-radius: 16px;
+  border-radius: 12px;
+  padding: 4px;
 }
 
-.crossBtn:hover {
+.deleteBtn:hover {
   cursor: pointer;
+  color: #003049;
+  background-color: #fcbf49;
 }
 
 .mainCartDiv:hover {
@@ -51,4 +54,13 @@
   display: flex;
   flex: 4;
   justify-content: space-around;
+  align-items: center;
+}
+
+.qtyMultiplier {
+  font-weight: 600;
+}
+
+.cartPriceHead {
+  font-weight: 700;
 }

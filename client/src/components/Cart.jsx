@@ -1,25 +1,31 @@
-import React from "react";
+import * as React from "react";
 import "./cart.css";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { useDispatch } from "react-redux";
+import { removePizza } from "../redux/cartRedux";
 
-const Cart = () => {
+const Cart = (props) => {
+  const pizza = props.pizza;
+  const index = props.index;
+  const dispatch = useDispatch();
+
+  const handleDelete = () => {
+    dispatch(removePizza([index, pizza]));
+  };
+
   return (
     <div className="mainCartDiv">
       <div className="cartImgDiv">
-        <img
-          src="https://images.unsplash.com/photo-1599334519864-4163e88d7e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
-          alt="pizza"
-          className="cartImg"
-        />
+        <img src={pizza.image} alt="pizza" className="cartImg" />
       </div>
       <div className="titleDiv">
-        <h5>Mediterranean Medly</h5>
-        <h5>₹769</h5>
-        <button type="button" className="crossBtn">
-          -
-        </button>
-        <span>0</span>
-        <button type="button" className="crossBtn">
-          +
+        <h5>{pizza.pizzaName}</h5>
+        <span className="qtyMultiplier">{pizza.quantity} x</span>
+
+        <h5 className="cartPriceHead">₹{pizza.price}</h5>
+
+        <button type="button" className="deleteBtn" onClick={handleDelete}>
+          <DeleteIcon fontSize="small" />
         </button>
       </div>
     </div>

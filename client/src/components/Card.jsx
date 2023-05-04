@@ -1,31 +1,34 @@
 import React from "react";
 import "./card.css";
+import { useNavigate } from "react-router-dom";
 
-const Card = () => {
+const Card = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="cardContainer">
       <div className="imgDiv">
-        <img
-          src="https://images.unsplash.com/photo-1599334519864-4163e88d7e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
-          alt="pizza"
-          className="cardImg"
-        />
+        <img src={props.pizza.image} alt="pizza" className="cardImg" />
       </div>
       <div className="cardDeets">
         <div>
-          <h4>Mediterranean</h4>
+          <h4>{props.pizza.pizzaName}</h4>
         </div>
         <p className="pizzaDes">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          {props.pizza.description.slice(0, 70)}
+          <b>...</b>
         </p>
-        <div className="price">₹769</div>
+        <div className="price">₹{props.pizza.price}</div>
         <div>
-          <button type="button" className="addCart">
+          <button
+            type="button"
+            className="addCart"
+            onClick={() => navigate(`/customize/${props.pizza._id}`)}
+          >
             Customize
           </button>
-          <button type="button" className="addCart">
+          {/* <button type="button" className="addCart">
             Add to cart
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
