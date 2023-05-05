@@ -26,9 +26,6 @@ const Card = (props) => {
           >
             Customize
           </button>
-          {/* <button type="button" className="addCart">
-            Add to cart
-          </button> */}
         </div>
       </div>
     </div>

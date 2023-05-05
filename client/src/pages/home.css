@@ -124,6 +124,11 @@
   height: calc(100%-40px);
 } */
 
+.checkoutBtn:hover {
+  background-color: #fcbf49;
+  cursor: pointer;
+}
+
 .checkoutDiv {
   justify-content: space-between;
   display: flex;

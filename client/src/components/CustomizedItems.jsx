@@ -10,6 +10,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { addPizza } from "../redux/cartRedux";
 import OrderItem from "../pages/OrderItem";
+import { MainCart } from "./MainCart";
 
 export function CustomizedItems() {
   const cart = useSelector((state) => state.user.cart);
@@ -289,7 +290,7 @@ export function CustomizedItems() {
             </div>
           </div>
         </div>
-        <div className="cart">
+        {/* <div className="cart">
           <div className="cartNav">
             <h3>CART</h3>
           </div>
@@ -304,7 +305,8 @@ export function CustomizedItems() {
             </button>
             <div className="totalSpan">Total: ₹{cart.totalPrice}</div>
           </div>
-        </div>
+        </div> */}
+        <MainCart />
       </div>
     </div>
   );

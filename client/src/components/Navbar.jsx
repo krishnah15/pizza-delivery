@@ -2,10 +2,12 @@ import React from "react";
 import photo from "../assets/pizza-slice.png";
 import { logOut } from "../redux/userRedux";
 import { useDispatch } from "react-redux";
+import { cartReset } from "../redux/cartRedux";
 
 export function Navbar() {
   const dispatch = useDispatch();
   const handleLogout = () => {
+    dispatch(cartReset());
     dispatch(logOut());
   };
   return (
