@@ -29,7 +29,7 @@ mongoose
   });
 
 app.get("/", (req, res) => {
-  res.send("haan ho raha hai");
+  res.send("haan ho raha hai.");
 });
 
 app.listen(5000, () => {
