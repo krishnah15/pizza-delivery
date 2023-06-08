@@ -1,0 +1,83 @@
+.adminContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fcbf49;
+  width: 100%;
+  height: 100vh;
+}
+
+.inventoryContainer {
+  display: flex;
+  background-color: #d62828;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  height: 450px;
+}
+.orderStatus {
+  display: flex;
+  background-color: #d62828;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  height: 450px;
+}
+
+.inItems {
+  display: flex;
+  background-color: #eae2b7;
+  height: 20px;
+  width: 400px;
+  margin: 15px;
+  padding: 20px;
+  align-items: center;
+  color: #d62828;
+  border-radius: 16px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.commonHeading {
+  color: #003049;
+}
+.adminLogout {
+  width: 30%;
+  background-color: #003049;
+  color: #eae2b7;
+  padding: 15px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+}
+
+.adminLogout:hover {
+  cursor: pointer;
+  background-color: #eae2b7;
+  color: #003049;
+}
+
+.orderStatusList {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  flex: 1;
+}
+
+.valueIncBtn {
+  padding: 5px;
+  background-color: #d62828;
+  border-radius: 16px;
+  color: #fcbf49;
+  font-weight: 600;
+}
+.valueIncBtn:hover {
+  cursor: pointer;
+  background-color: #fcbf49;
+  color: #d62828;
+}
