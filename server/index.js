@@ -32,6 +32,6 @@ app.get("/", (req, res) => {
   res.send("haan ho raha hai.");
 });
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 2000, () => {
   console.log("server started");
 });
