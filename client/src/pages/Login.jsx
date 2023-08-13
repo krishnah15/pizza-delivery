@@ -24,7 +24,8 @@ const Login = () => {
         .then(async (res) => {
           dispatch(logIn(res.data));
         })
-        .catch(() => {
+        .catch((e) => {
+          console.log(e);
           toast.error("Something went wrong!", {
             duration: 2000,
             style: {
